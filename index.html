@@ -3,10 +3,20 @@
   <head>
     <title>Link in Bio</title>
     <style>
+      * {
+        border: thin red solid;
+      }
       body {
         padding-top: 40px;
         padding-bottom:40px;
         background-color: #004643
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
       }
 
       .banner-image {
@@ -26,12 +36,15 @@
       }
 
       .link {
-        background-color:#f9bc60
+        background-color:#f9bc60;
+        display: flex;
+        align-items: center;
       }
 
       .link a {
         color:#001e1d;
         text-decoration: none;
+        text-align: center;
       }
 
       .thumbnail {
@@ -43,6 +56,8 @@
       </style>
   </head>
   <body>
+    <div class="items">
+
     <div class="banner">
       <img src="/thumbnails/my-headshot.jpg" alt="Gabriel Hewitt headshot" class="banner-image">
     </div>
@@ -93,5 +108,6 @@
       <a href="https://en.wikipedia.org/wiki/List_of_Jamaican_dishes_and_foods">The way to my heart</a>
     </div>
 
+    </div>
   </body>
 </html>
